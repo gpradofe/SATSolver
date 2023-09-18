@@ -64,3 +64,6 @@ int BooleanFormula::getVariableCount() const {
     }
     return max_variable;
 }
+const std::vector<Clause>& BooleanFormula::getClauses() const {
+    return clauses;
+}

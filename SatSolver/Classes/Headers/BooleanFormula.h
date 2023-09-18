@@ -15,6 +15,9 @@ public:
     // Get the total number of variables in the formula
     int getVariableCount() const;
 
+    // Get the clauses in the formula
+    const std::vector<Clause>& getClauses() const; // <-- New method added
+
 private:
     std::vector<Clause> clauses;
 };

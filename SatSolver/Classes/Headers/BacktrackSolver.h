@@ -16,7 +16,7 @@ private:
     std::vector<BoolValue> current_assignment;
 
     // Recursive backtracking function
-    bool backtrack(int variable_index);
+    bool backtrack(size_t variable_index);
 
     // Check if the current assignment satisfies the formula
     bool isSatisfied() const;
