@@ -7,53 +7,76 @@ void BooleanFormula::addClause(const Clause& clause) {
     clauses.push_back(clause);
 }
 
-BoolValue BooleanFormula::evaluate(const std::vector<BoolValue>& assignments) const {
-    for (const Clause& clause : clauses) {
-        if (clause.evaluate(assignments) == BoolValue::FALSE) {
-            return BoolValue::FALSE;
-        }
-    }
-    return BoolValue::TRUE;
-}
-
-bool BooleanFormula::loadFromFile(const std::string& filename) {
+std::vector<BooleanFormula> BooleanFormula::loadFromFile(const std::string& filename) {
     std::ifstream file(filename);
     if (!file.is_open()) {
-        return false;  // Failed to open the file
+        throw std::runtime_error("Failed to open the file");
     }
 
+    std::vector<BooleanFormula> formulas;
     std::string line;
+
+    BooleanFormula current_formula;
+    bool reading_formula = false;
+
     while (std::getline(file, line)) {
-        // Skip comment lines
+        std::cout << "Reading line: " << line << std::endl;
+
         if (line[0] == 'c') {
+            if (reading_formula) {
+                formulas.push_back(current_formula);
+                current_formula = BooleanFormula();
+            }
+            reading_formula = true;
             continue;
         }
 
-        // Parse clauses
-        if (line[0] != 'p') {
+        if (line[0] == 'p') {
+            continue;
+        }
+
+        if (reading_formula) {
             std::istringstream iss(line);
-            int literal_val;
+            std::string literal_str;
             Clause clause;
 
-            while (iss >> literal_val) {
+            while (std::getline(iss, literal_str, ',')) {  // Using ',' as the delimiter
+                int literal_val = std::stoi(literal_str);
+
                 if (literal_val == 0) {
-                    break;  // End of the clause
+                    current_formula.addClause(clause);
+                    std::cout << "Added clause: ";
+                    for (const Literal &lit : clause.getLiterals()) {
+                        std::cout << (lit.getValue() == BoolValue::TRUE ? "" : "-") << lit.getVariable() << " ";
+                    }
+                    std::cout << std::endl;
+
+                    clause.clear();
+                    break;
                 }
+
                 BoolValue literal_bool = (literal_val > 0) ? BoolValue::TRUE : BoolValue::FALSE;
                 int variable = std::abs(literal_val);
                 Literal literal(variable, literal_bool);
+
+                // Debug print for each literal
+                std::cout << "Parsed Literal: " << (literal.getValue() == BoolValue::TRUE ? "" : "-") << literal.getVariable() << std::endl;
+
                 clause.addLiteral(literal);
             }
-
-            addClause(clause);
-            std::cout << "Loaded clause: " << line << std::endl;
         }
     }
 
+    if (reading_formula) {
+        formulas.push_back(current_formula);
+    }
+
     file.close();
-    std::cout << "Loaded formula with " << clauses.size() << " clauses." << std::endl;
-    return true;  // Successfully loaded the formula
+    return formulas;
 }
+
+
+
 
 int BooleanFormula::getVariableCount() const {
     int max_variable = 0;
@@ -62,8 +85,16 @@ int BooleanFormula::getVariableCount() const {
             max_variable = std::max(max_variable, lit.getVariable());
         }
     }
+    std::cout << "Max variable for this formula: " << max_variable << std::endl;
     return max_variable;
 }
+
+
 const std::vector<Clause>& BooleanFormula::getClauses() const {
     return clauses;
+}
+void BooleanFormula::removeRedundantClauses(const std::vector<BoolValue>& assignment) {
+    clauses.erase(std::remove_if(clauses.begin(), clauses.end(),
+        [&](const Clause& c) { return c.evaluate(assignment) == BoolValue::TRUE; }),
+        clauses.end());
 }

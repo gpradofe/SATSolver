@@ -10,9 +10,15 @@ BoolValue Clause::evaluate(const std::vector<BoolValue>& assignments) const {
             return BoolValue::TRUE;
         }
     }
+    
     return BoolValue::FALSE;
 }
 
 const std::vector<Literal>& Clause::getLiterals() const {
     return literals;
 }
+void Clause::clear() {
+    literals.clear();
+}
+
+Clause::Clause(const std::vector<Literal>& literals) : literals(literals) {}

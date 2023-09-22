@@ -1,26 +1,26 @@
-#pragma once
+#ifndef BACKTRACKSOLVER_H
+#define BACKTRACKSOLVER_H
+
 #include "BooleanFormula.h"
+#include "Clause.h"
+#include "Literal.h"
+#include <vector>
+#include <iostream>
 
 class BacktrackSolver {
 public:
-    BacktrackSolver(const BooleanFormula& formula);
+    BacktrackSolver(BooleanFormula& formula);
 
-    // Find a satisfying assignment using backtracking
     bool solve();
-
-    // Get the satisfying assignment (if found)
     const std::vector<BoolValue>& getAssignment() const;
 
 private:
-    const BooleanFormula& formula;
+    BooleanFormula& formula;
     std::vector<BoolValue> current_assignment;
-
-    // Recursive backtracking function
-    bool backtrack(size_t variable_index);
-
-    // Check if the current assignment satisfies the formula
+    size_t mostConstrainedVariable();
+    bool backtrack();
     bool isSatisfied() const;
-
-    // Select the next unassigned variable for branching
-    int selectVariable() const;
+    bool unitPropagation(); // New method for unit propagation
 };
+
+#endif
