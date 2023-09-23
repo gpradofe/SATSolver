@@ -6,21 +6,27 @@
 #include "Literal.h"
 #include <vector>
 #include <iostream>
-
-class BacktrackSolver {
+#include <set>
+#include <cstdlib>
+#include <algorithm>
+class BacktrackSolver
+{
 public:
-    BacktrackSolver(BooleanFormula& formula);
+    BacktrackSolver(BooleanFormula &formula);
 
     bool solve();
-    const std::vector<BoolValue>& getAssignment() const;
+    const std::vector<BoolValue> &getAssignment() const;
 
 private:
-    BooleanFormula& formula;
+    BooleanFormula &formula;
     std::vector<BoolValue> current_assignment;
-    size_t mostConstrainedVariable();
-    bool backtrack();
-    bool isSatisfied() const;
-    bool unitPropagation(); // New method for unit propagation
-};
+    std::vector<int> variable_activity; // <-- Add this line
 
+    bool backtrack();
+    bool isSatisfied();
+    bool unitPropagation(); // New method for unit propagation
+    bool pureLiteralElimination();
+    int decideVariable();
+    bool isAllClausesSatisfied();
+};
 #endif

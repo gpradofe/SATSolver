@@ -2,22 +2,24 @@
 #include "Clause.h"
 #include <vector>
 
-class BooleanFormula {
+class BooleanFormula
+{
 public:
-    void addClause(const Clause& clause);
+    void addClause(const Clause &clause);
 
     // Evaluate the entire formula based on assignments
-    BoolValue evaluate(const std::vector<BoolValue>& assignments) const;
+    BoolValue evaluate(const std::vector<BoolValue> &assignments) const;
 
     // Load formulas from a file
-    std::vector<BooleanFormula> loadFromFile(const std::string& filename);
+    std::vector<BooleanFormula> loadFromFile(const std::string &filename);
 
     // Get the total number of variables in the formula
     int getVariableCount() const;
 
     // Get the clauses in the formula
-    const std::vector<Clause>& getClauses() const;
-    void removeRedundantClauses(const std::vector<BoolValue>& assignment);
+    const std::vector<Clause> &getClauses() const;
+    void removeRedundantClauses(const std::vector<BoolValue> &assignment);
+    std::vector<Clause> &getClausesDirect();
 
 private:
     std::vector<Clause> clauses;
