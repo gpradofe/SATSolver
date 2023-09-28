@@ -12,12 +12,10 @@ bool BacktrackSolver::solve()
 {
     if (!unitPropagation())
     {
-        std::cout << "Unit propagation detected a conflict." << std::endl;
         return false;
     }
     if (!pureLiteralElimination())
     {
-        std::cout << "Pure literal elimination detected a conflict." << std::endl;
         return false;
     }
     return backtrack();
@@ -30,6 +28,7 @@ const std::vector<BoolValue> &BacktrackSolver::getAssignment() const
 
 bool BacktrackSolver::backtrack()
 {
+    num_decisions++;
     if (isAllClausesSatisfied())
     {
         std::cout << "Solution found: ";
@@ -50,11 +49,11 @@ bool BacktrackSolver::backtrack()
 
     // Try TRUE assignment
     current_assignment[variable_index] = BoolValue::TRUE;
+    num_backtracks++;
     if (backtrack())
     {
         return true;
     }
-
     // Try FALSE assignment
     current_assignment[variable_index] = BoolValue::FALSE;
     if (backtrack())
@@ -105,14 +104,10 @@ bool BacktrackSolver::isSatisfied()
     {
         if (clause.evaluate(current_assignment) == BoolValue::FALSE)
         {
-            std::cout << "Clause unsatisfied: ";
             for (const Literal &lit : clause.getLiterals())
             {
                 variable_activity[lit.getVariable() - 1]++;
-                std::cout << (lit.getValue() == BoolValue::TRUE ? "" : "-") << lit.getVariable() << " ";
             }
-            std::cout << std::endl;
-            // Don't return false immediately. Instead, mark it for backtracking
             return false;
         }
     }
@@ -160,6 +155,7 @@ bool BacktrackSolver::unitPropagation()
             // Check if clause is a unit clause
             if (unassignedCount == 1)
             {
+                num_unit_propagations++;
                 BoolValue assignedVal = unassignedLiteral.getValue();
                 if (current_assignment[unassignedLiteral.getVariable() - 1] == BoolValue::UNASSIGNED)
                 {
@@ -168,12 +164,6 @@ bool BacktrackSolver::unitPropagation()
                 }
             }
         }
-        std::cout << "After unit propagation: ";
-        for (BoolValue val : current_assignment)
-        {
-            std::cout << static_cast<int>(val) << " ";
-        }
-        std::cout << std::endl;
     }
     return true; // No conflicts detected
 }
@@ -213,26 +203,15 @@ bool BacktrackSolver::pureLiteralElimination()
         }
     }
 
-    std::cout << "Pure positive literals: ";
     for (int var : purePositives)
     {
-        std::cout << var << " ";
         current_assignment[var - 1] = BoolValue::TRUE;
     }
-    std::cout << std::endl;
 
-    std::cout << "Pure negative literals: ";
     for (int var : pureNegatives)
     {
-        std::cout << -var << " "; // Print them as negative for clarity
         current_assignment[var - 1] = BoolValue::FALSE;
     }
-    std::cout << std::endl;
-    std::cout << "After pure literal elimination: ";
-    for (BoolValue val : current_assignment)
-    {
-        std::cout << static_cast<int>(val) << " ";
-    }
-    std::cout << std::endl;
+
     return true;
 }

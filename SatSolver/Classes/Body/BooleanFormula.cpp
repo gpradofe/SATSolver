@@ -97,7 +97,6 @@ int BooleanFormula::getVariableCount() const
             max_variable = std::max(max_variable, lit.getVariable());
         }
     }
-    std::cout << "Max variable for this formula: " << max_variable << std::endl;
     return max_variable;
 }
 

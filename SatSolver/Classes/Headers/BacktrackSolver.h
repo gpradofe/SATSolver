@@ -16,6 +16,9 @@ public:
 
     bool solve();
     const std::vector<BoolValue> &getAssignment() const;
+    unsigned long long getNumBacktracks() const { return num_backtracks; }
+    unsigned long long getNumUnitPropagations() const { return num_unit_propagations; }
+    unsigned long long getNumDecisions() const { return num_decisions; }
 
 private:
     BooleanFormula &formula;
@@ -28,5 +31,9 @@ private:
     bool pureLiteralElimination();
     int decideVariable();
     bool isAllClausesSatisfied();
+
+    unsigned long long num_backtracks = 0;
+    unsigned long long num_unit_propagations = 0;
+    unsigned long long num_decisions = 0;
 };
 #endif
