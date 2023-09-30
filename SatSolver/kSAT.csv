@@ -1,0 +1,401 @@
+Formula #,Elapsed Time (ms),Result
+1,0,No satisfying assignment found
+2,0,Satisfying assignment found
+3,0,No satisfying assignment found
+4,0,Satisfying assignment found
+5,0,Satisfying assignment found
+6,0,Satisfying assignment found
+7,0,Satisfying assignment found
+8,0,No satisfying assignment found
+9,0,No satisfying assignment found
+10,0,No satisfying assignment found
+11,0,No satisfying assignment found
+12,0,No satisfying assignment found
+13,0,Satisfying assignment found
+14,0,Satisfying assignment found
+15,0,No satisfying assignment found
+16,0,No satisfying assignment found
+17,0,Satisfying assignment found
+18,0,No satisfying assignment found
+19,0,Satisfying assignment found
+20,0,Satisfying assignment found
+21,0,Satisfying assignment found
+22,0,Satisfying assignment found
+23,1,No satisfying assignment found
+24,2,No satisfying assignment found
+25,0,Satisfying assignment found
+26,2,No satisfying assignment found
+27,0,No satisfying assignment found
+28,0,Satisfying assignment found
+29,2,No satisfying assignment found
+30,0,Satisfying assignment found
+31,0,Satisfying assignment found
+32,27,No satisfying assignment found
+33,9,Satisfying assignment found
+34,0,Satisfying assignment found
+35,27,No satisfying assignment found
+36,1,Satisfying assignment found
+37,26,No satisfying assignment found
+38,14,No satisfying assignment found
+39,0,Satisfying assignment found
+40,28,No satisfying assignment found
+41,30,No satisfying assignment found
+42,500,No satisfying assignment found
+43,121,No satisfying assignment found
+44,58,No satisfying assignment found
+45,119,No satisfying assignment found
+46,7,No satisfying assignment found
+47,61,No satisfying assignment found
+48,0,Satisfying assignment found
+49,30,No satisfying assignment found
+50,0,Satisfying assignment found
+51,129,No satisfying assignment found
+52,124,No satisfying assignment found
+53,0,Satisfying assignment found
+54,63,No satisfying assignment found
+55,529,No satisfying assignment found
+56,67,No satisfying assignment found
+57,64,No satisfying assignment found
+58,19,Satisfying assignment found
+59,273,No satisfying assignment found
+60,0,Satisfying assignment found
+61,17,Satisfying assignment found
+62,141,No satisfying assignment found
+63,1178,No satisfying assignment found
+64,9637,No satisfying assignment found
+65,593,No satisfying assignment found
+66,576,No satisfying assignment found
+67,144,No satisfying assignment found
+68,301,No satisfying assignment found
+69,139,No satisfying assignment found
+70,1135,No satisfying assignment found
+71,292,Satisfying assignment found
+72,626,No satisfying assignment found
+73,5106,No satisfying assignment found
+74,296,Satisfying assignment found
+75,312,No satisfying assignment found
+76,1256,No satisfying assignment found
+77,2509,No satisfying assignment found
+78,20634,No satisfying assignment found
+79,5117,No satisfying assignment found
+80,9,Satisfying assignment found
+81,0,No satisfying assignment found
+82,0,Satisfying assignment found
+83,0,Satisfying assignment found
+84,0,Satisfying assignment found
+85,0,No satisfying assignment found
+86,0,Satisfying assignment found
+87,0,No satisfying assignment found
+88,0,No satisfying assignment found
+89,0,No satisfying assignment found
+90,0,Satisfying assignment found
+91,0,Satisfying assignment found
+92,0,Satisfying assignment found
+93,0,Satisfying assignment found
+94,1,No satisfying assignment found
+95,1,No satisfying assignment found
+96,1,No satisfying assignment found
+97,1,No satisfying assignment found
+98,1,No satisfying assignment found
+99,1,No satisfying assignment found
+100,1,No satisfying assignment found
+101,27,No satisfying assignment found
+102,0,Satisfying assignment found
+103,32,No satisfying assignment found
+104,0,Satisfying assignment found
+105,26,No satisfying assignment found
+106,27,No satisfying assignment found
+107,27,No satisfying assignment found
+108,27,No satisfying assignment found
+109,0,Satisfying assignment found
+110,27,No satisfying assignment found
+111,563,No satisfying assignment found
+112,9,Satisfying assignment found
+113,564,No satisfying assignment found
+114,551,No satisfying assignment found
+115,555,No satisfying assignment found
+116,560,No satisfying assignment found
+117,563,No satisfying assignment found
+118,559,No satisfying assignment found
+119,553,No satisfying assignment found
+120,428,Satisfying assignment found
+121,2489,No satisfying assignment found
+122,2504,No satisfying assignment found
+123,2537,No satisfying assignment found
+124,2502,No satisfying assignment found
+125,2502,No satisfying assignment found
+126,301,Satisfying assignment found
+127,0,Satisfying assignment found
+128,634,Satisfying assignment found
+129,2494,No satisfying assignment found
+130,2,Satisfying assignment found
+131,5920,Satisfying assignment found
+132,11037,No satisfying assignment found
+133,1108,Satisfying assignment found
+134,11124,No satisfying assignment found
+135,1399,Satisfying assignment found
+136,11004,No satisfying assignment found
+137,11019,No satisfying assignment found
+138,3500,Satisfying assignment found
+139,10934,No satisfying assignment found
+140,10960,No satisfying assignment found
+141,23707,Satisfying assignment found
+142,23940,Satisfying assignment found
+143,48326,No satisfying assignment found
+144,48687,No satisfying assignment found
+145,47878,No satisfying assignment found
+146,48429,No satisfying assignment found
+147,49955,No satisfying assignment found
+148,49530,No satisfying assignment found
+149,86,Satisfying assignment found
+150,358,Satisfying assignment found
+151,220954,No satisfying assignment found
+152,106395,No satisfying assignment found
+153,215768,No satisfying assignment found
+154,211512,No satisfying assignment found
+155,213646,No satisfying assignment found
+156,213036,No satisfying assignment found
+157,251550,No satisfying assignment found
+158,222219,No satisfying assignment found
+159,218052,No satisfying assignment found
+160,215596,No satisfying assignment found
+161,0,Satisfying assignment found
+162,0,No satisfying assignment found
+163,0,No satisfying assignment found
+164,0,Satisfying assignment found
+165,0,Satisfying assignment found
+166,0,Satisfying assignment found
+167,0,Satisfying assignment found
+168,0,Satisfying assignment found
+169,0,Satisfying assignment found
+170,0,Satisfying assignment found
+171,0,Satisfying assignment found
+172,0,Satisfying assignment found
+173,0,Satisfying assignment found
+174,0,Satisfying assignment found
+175,0,Satisfying assignment found
+176,2,No satisfying assignment found
+177,2,No satisfying assignment found
+178,0,Satisfying assignment found
+179,3,No satisfying assignment found
+180,2,No satisfying assignment found
+181,11,Satisfying assignment found
+182,0,Satisfying assignment found
+183,0,Satisfying assignment found
+184,60,No satisfying assignment found
+185,23,Satisfying assignment found
+186,13,Satisfying assignment found
+187,70,No satisfying assignment found
+188,55,No satisfying assignment found
+189,54,No satisfying assignment found
+190,53,No satisfying assignment found
+191,706,Satisfying assignment found
+192,1157,No satisfying assignment found
+193,1327,No satisfying assignment found
+194,0,Satisfying assignment found
+195,1,Satisfying assignment found
+196,1165,No satisfying assignment found
+197,1155,No satisfying assignment found
+198,1138,No satisfying assignment found
+199,0,Satisfying assignment found
+200,0,Satisfying assignment found
+201,645,Satisfying assignment found
+202,5186,No satisfying assignment found
+203,2089,Satisfying assignment found
+204,5291,No satisfying assignment found
+205,5200,No satisfying assignment found
+206,1596,Satisfying assignment found
+207,5202,No satisfying assignment found
+208,339,Satisfying assignment found
+209,5224,No satisfying assignment found
+210,5272,No satisfying assignment found
+211,755,Satisfying assignment found
+212,23059,No satisfying assignment found
+213,984,Satisfying assignment found
+214,5790,Satisfying assignment found
+215,22827,No satisfying assignment found
+216,23093,No satisfying assignment found
+217,9892,Satisfying assignment found
+218,23264,No satisfying assignment found
+219,1761,Satisfying assignment found
+220,22678,No satisfying assignment found
+221,99982,No satisfying assignment found
+222,101670,No satisfying assignment found
+223,52172,Satisfying assignment found
+224,99721,No satisfying assignment found
+225,926,Satisfying assignment found
+226,102497,No satisfying assignment found
+227,9481,Satisfying assignment found
+228,100610,No satisfying assignment found
+229,19723,Satisfying assignment found
+230,101139,No satisfying assignment found
+231,442357,No satisfying assignment found
+232,239915,Satisfying assignment found
+233,435571,No satisfying assignment found
+234,225283,Satisfying assignment found
+235,53917,Satisfying assignment found
+236,433369,No satisfying assignment found
+237,6706,Satisfying assignment found
+238,216736,Satisfying assignment found
+239,429436,No satisfying assignment found
+240,374192,Satisfying assignment found
+241,0,Satisfying assignment found
+242,0,Satisfying assignment found
+243,0,Satisfying assignment found
+244,0,Satisfying assignment found
+245,0,Satisfying assignment found
+246,0,Satisfying assignment found
+247,0,Satisfying assignment found
+248,0,Satisfying assignment found
+249,0,Satisfying assignment found
+250,0,Satisfying assignment found
+251,0,Satisfying assignment found
+252,0,Satisfying assignment found
+253,0,Satisfying assignment found
+254,0,Satisfying assignment found
+255,0,Satisfying assignment found
+256,0,Satisfying assignment found
+257,0,Satisfying assignment found
+258,0,Satisfying assignment found
+259,0,Satisfying assignment found
+260,0,Satisfying assignment found
+261,0,Satisfying assignment found
+262,0,Satisfying assignment found
+263,0,Satisfying assignment found
+264,0,Satisfying assignment found
+265,1,Satisfying assignment found
+266,0,Satisfying assignment found
+267,2,Satisfying assignment found
+268,0,Satisfying assignment found
+269,0,Satisfying assignment found
+270,1,Satisfying assignment found
+271,0,Satisfying assignment found
+272,0,Satisfying assignment found
+273,0,Satisfying assignment found
+274,4,Satisfying assignment found
+275,20,Satisfying assignment found
+276,0,Satisfying assignment found
+277,0,Satisfying assignment found
+278,0,Satisfying assignment found
+279,0,Satisfying assignment found
+280,2,Satisfying assignment found
+281,0,Satisfying assignment found
+282,55,Satisfying assignment found
+283,4,Satisfying assignment found
+284,0,Satisfying assignment found
+285,0,Satisfying assignment found
+286,40,Satisfying assignment found
+287,30,Satisfying assignment found
+288,102,Satisfying assignment found
+289,41,Satisfying assignment found
+290,0,Satisfying assignment found
+291,0,Satisfying assignment found
+292,242,Satisfying assignment found
+293,0,Satisfying assignment found
+294,0,Satisfying assignment found
+295,0,Satisfying assignment found
+296,84,Satisfying assignment found
+297,227,Satisfying assignment found
+298,0,Satisfying assignment found
+299,0,Satisfying assignment found
+300,0,Satisfying assignment found
+301,81,Satisfying assignment found
+302,0,Satisfying assignment found
+303,106,Satisfying assignment found
+304,177,Satisfying assignment found
+305,101,Satisfying assignment found
+306,108,Satisfying assignment found
+307,0,Satisfying assignment found
+308,0,Satisfying assignment found
+309,0,Satisfying assignment found
+310,0,Satisfying assignment found
+311,0,Satisfying assignment found
+312,0,Satisfying assignment found
+313,0,Satisfying assignment found
+314,253,Satisfying assignment found
+315,0,Satisfying assignment found
+316,0,Satisfying assignment found
+317,111,Satisfying assignment found
+318,259,Satisfying assignment found
+319,0,Satisfying assignment found
+320,423,Satisfying assignment found
+321,0,Satisfying assignment found
+322,0,Satisfying assignment found
+323,0,Satisfying assignment found
+324,0,Satisfying assignment found
+325,0,Satisfying assignment found
+326,0,Satisfying assignment found
+327,0,Satisfying assignment found
+328,0,Satisfying assignment found
+329,0,Satisfying assignment found
+330,0,Satisfying assignment found
+331,0,Satisfying assignment found
+332,0,Satisfying assignment found
+333,0,Satisfying assignment found
+334,0,Satisfying assignment found
+335,0,Satisfying assignment found
+336,0,Satisfying assignment found
+337,0,Satisfying assignment found
+338,0,Satisfying assignment found
+339,0,Satisfying assignment found
+340,0,Satisfying assignment found
+341,0,Satisfying assignment found
+342,0,Satisfying assignment found
+343,0,Satisfying assignment found
+344,0,Satisfying assignment found
+345,0,Satisfying assignment found
+346,0,Satisfying assignment found
+347,0,Satisfying assignment found
+348,0,Satisfying assignment found
+349,0,Satisfying assignment found
+350,0,Satisfying assignment found
+351,0,Satisfying assignment found
+352,0,Satisfying assignment found
+353,0,Satisfying assignment found
+354,0,Satisfying assignment found
+355,0,Satisfying assignment found
+356,0,Satisfying assignment found
+357,0,Satisfying assignment found
+358,35,Satisfying assignment found
+359,0,Satisfying assignment found
+360,0,Satisfying assignment found
+361,0,Satisfying assignment found
+362,0,Satisfying assignment found
+363,0,Satisfying assignment found
+364,0,Satisfying assignment found
+365,0,Satisfying assignment found
+366,0,Satisfying assignment found
+367,0,Satisfying assignment found
+368,0,Satisfying assignment found
+369,0,Satisfying assignment found
+370,0,Satisfying assignment found
+371,0,Satisfying assignment found
+372,0,Satisfying assignment found
+373,0,Satisfying assignment found
+374,0,Satisfying assignment found
+375,0,Satisfying assignment found
+376,0,Satisfying assignment found
+377,0,Satisfying assignment found
+378,0,Satisfying assignment found
+379,0,Satisfying assignment found
+380,0,Satisfying assignment found
+381,0,Satisfying assignment found
+382,0,Satisfying assignment found
+383,0,Satisfying assignment found
+384,0,Satisfying assignment found
+385,0,Satisfying assignment found
+386,0,Satisfying assignment found
+387,0,Satisfying assignment found
+388,0,Satisfying assignment found
+389,0,Satisfying assignment found
+390,0,Satisfying assignment found
+391,0,Satisfying assignment found
+392,0,Satisfying assignment found
+393,0,Satisfying assignment found
+394,0,Satisfying assignment found
+395,0,Satisfying assignment found
+396,0,Satisfying assignment found
+397,0,Satisfying assignment found
+398,0,Satisfying assignment found
+399,0,Satisfying assignment found
+400,0,Satisfying assignment found
