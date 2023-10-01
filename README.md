@@ -1,5 +1,7 @@
 # 🚀 Readme-Team
 
+## Detailed analysis and performance insights for various SAT solvers.
+
 ## 📋 Table of Contents
 
 - [Team Members](#-team-members)
@@ -9,14 +11,18 @@
   - [Programming Language and Libraries](#-programming-language-and-libraries)
   - [Key Data Structures](#-key-data-structures)
   - [Data Classes and Their Responsibilities](#-data-classes-and-their-responsibilities)
-  - [Execution Time vs. Number of Variables](#-execution-time-vs-number-of-variables)
-  - [Curve Fit for Worst Case Times](#-curve-fit-for-worst-case-times)
+  - [Scatter Plots & Curve Fit Plots](#-execution-time-vs-number-of-variables)
+    - [2SAT Dataset using Backtrack SAT Solver](#2sat-dataset-using-backtrack-sat-solver)
+    - [kSAT Dataset using Backtrack SAT Solver](#ksat-dataset-using-backtrack-sat-solver)
+    - [kSATu Dataset using Backtrack SAT Solver](#ksatu-dataset-using-backtrack-sat-solver)
   - [Observations on Complexity](#-observations-on-complexity)
   - [Additional Work](#-additional-work)
 - [TwoSAT Solver](#-twosat-solver)
   - [Introduction and Purpose](#-introduction-and-purpose)
   - [Key Data Structures and Classes](#-key-data-structures-and-classes)
   - [Algorithm Logic](#-algorithm-logic)
+  - [Scatter Plots & Curve Fit Plots](#-execution-time-vs-number-of-variables)
+    - [2SAT Dataset using Kajasuru Algorithm](#2sat-dataset-using-kajasuru-algorithm)
   - [Usage and Execution](#-usage-and-execution)
 
 ---
@@ -89,13 +95,51 @@ For testing, each Clause has an evaluate method that checks if the clause is sat
 - **Responsibility:** Represents the possible truth values a variable can have: TRUE, FALSE, or UNASSIGNED.
 - **Usage:** Used by the `BacktrackSolver` class to maintain current variable assignments.
 
-### 📊 Execution Time vs. Number of Variables:
+---
 
-The data highlights the time taken by our solver for various test files. Unsatisfiable WFFs are marked in red, while satisfiable ones are in green.
+### 📈 **Scatter Plots & Curve Fit Plots**
 
-### 📈 Curve Fit for Worst Case Times:
+#### 2SAT Dataset using Backtrack SAT Solver
 
-After analyzing our results and factoring in the total number of literals, we derived a curve fit for the worst-case times.
+##### 📊 **Scatter Plot**: Execution Time vs Number of Variables
+
+![2SAT Scatter Plot using Backtrack SAT Solver](SatSolver/Graphs/scatter_plot_2SAT.png)
+
+The scatter plot presents the relationship between execution time and the number of variables for the 2SAT formulas using the Backtrack SAT Solver. The points are color-coded based on satisfiability: green circles represent satisfiable formulas and red crosses represent unsatisfiable formulas. As the number of variables increases, there's a clear upward trend in execution time, suggesting that the solver takes longer for formulas with more variables. Most formulas in this dataset are satisfiable, as indicated by the higher density of green points.
+
+##### 📉 **Curve Fit Plot**: Adjusted Worst Case Execution Time vs Number of Variables
+
+![2SAT Curve Fit Plot using Backtrack SAT Solver](SatSolver/Graphs/curve_fit_plot_2SAT.png)
+
+The blue scatter points represent the adjusted worst-case execution times for each number of variables, while the red curve is an exponential fit to these points. The exponential nature of the curve suggests a rapid increase in worst-case execution time as the number of variables grows, especially for larger variable counts. This observation aligns with the expected complexity of the Backtrack SAT Solver, which can, in the worst case, have an exponential growth in execution time relative to the size of the problem.
+
+#### **kSAT Dataset using Backtrack SAT Solver**
+
+##### 📊 **Scatter Plot**: Execution Time vs Number of Variables
+
+![kSAT Scatter Plot using Backtrack SAT Solver](SatSolver/Graphs/scatter_plot_ksat.png)
+
+The scatter plot illustrates the relationship between execution time and the number of variables for the kSAT formulas using the Backtrack SAT Solver. Points are differentiated by satisfiability: green circles indicate satisfiable formulas, while red crosses signify unsatisfiable ones. With an increase in the number of variables, there's a noticeable rise in execution time, denoting the solver's prolonged runtime for formulas with more variables. The predominance of green points in this dataset suggests a higher number of satisfiable formulas.
+
+##### 📉 **Curve Fit Plot**: Adjusted Worst Case Execution Time vs Number of Variables
+
+![kSAT Curve Fit Plot using Backtrack SAT Solver](SatSolver/Graphs/curve_fit_plot_kSAT.png)
+
+This plot features blue scatter points depicting the adjusted worst-case execution times for each number of variables. The accompanying red curve represents the exponential fit to these points. The curve's exponential characteristic implies a swift escalation in the worst-case execution time as the number of variables increases, particularly noticeable for larger variable counts. Such an observation is consistent with the anticipated complexity of the Backtrack SAT Solver, known for its potential exponential surge in execution time in relation to problem size.
+
+#### **kSATu Dataset using Backtrack SAT Solver**
+
+##### 📊 **Scatter Plot**: Execution Time vs Number of Variables
+
+![kSATu Scatter Plot using Backtrack SAT Solver](SatSolver/Graphs/scatter_plot_kSATu.png)
+
+The scatter plot displays the correlation between execution time and the number of variables for the kSATu formulas using the Backtrack SAT Solver. Each data point is color-coded based on its satisfiability: green circles stand for satisfiable formulas, while red crosses denote unsatisfiable formulas. An upward trend in execution time is evident as the number of variables grows, indicating an extended processing time for formulas with an augmented number of variables. A considerable number of green points ...
+
+##### 📉 **Curve Fit Plot**: Adjusted Worst Case Execution Time vs Number of Variables
+
+![kSATu Curve Fit Plot using Backtrack SAT Solver](SatSolver/Graphs/scatter_plot_kSATu.png)
+
+In this plot, the blue scatter points symbolize the adjusted worst-case execution times associated with each variable number. The overlaying red curve provides an exponential fit to these points. The curve's distinct exponential growth suggests a rapid increase in the worst-case execution time with a growing number of variables, especially prominent for larger counts. This trend is in line with the Backtrack SAT Solver's expected complexity, which is known to exhibit an exponential growth pattern in exe...
 
 ### 🔍 Observations on Complexity:
 
@@ -134,6 +178,27 @@ class TwoSAT:
 ### 📖 Algorithm Logic:
 
 The solver constructs an implication graph and its reverse based on the clauses provided. Kosaraju's algorithm is applied to find strongly connected components, and the solver checks for conflicts in assignments to determine satisfiability.
+
+### 📈 **Scatter Plots & Curve Fit Plots**
+
+#### **2SAT Dataset using Kajasuru Algorithm**
+
+##### 📊 **Scatter Plot**: Execution Time vs Number of Variables
+
+![2SAT Scatter Plot using Kajasuru Algorithm](2SATSolver/Graphs/scatter_plot_2SAT_Kajasuru.png)
+
+The scatter plot showcases the relationship between execution time and the number of variables for the 2SAT formulas when processed using the Kajasuru Algorithm. The data points are categorized based on satisfiability:
+
+- Green circles represent satisfiable formulas.
+- Red crosses highlight unsatisfiable formulas.
+
+There's a distinct upward trend in execution time corresponding to the increase in the number of variables. This indicates that the Kajasuru Algorithm, although linear time, requires more time for formulas with a greater number of variables. The majority of the formulas in this dataset were determined to be satisfiable, as evidenced by the density of green points.
+
+##### 📉 **Curve Fit Plot**: Adjusted Worst Case Execution Time vs Number of Variables
+
+![2SAT Curve Fit Plot using Kajasuru Algorithm](2SATSolver/Graphs/curve_fit_plot_2SAT_Kajasuru.png)
+
+The plot encompasses blue scatter points that illustrate the adjusted worst-case execution times for each number of variables. The red curve superimposed on these points offers an exponential fit, indicating the worst-case execution time's potential growth trend. The curve emphasizes that even for a linear time solver like the Kajasuru Algorithm, there can be instances where the execution time exhibits exponential-like growth, especially when dealing with a large number of variables. Such observations underline the challenges faced even by efficient algorithms when handling SAT problems of considerable size.
 
 ### 🚀 Usage and Execution:
 
