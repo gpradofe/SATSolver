@@ -157,7 +157,7 @@ An upward trend in execution time is evident as the number of variables grows, i
 
 ##### 📉 **Curve Fit Plot**: Adjusted Worst Case Execution Time vs Number of Variables
 
-![kSATu Curve Fit Plot using Backtrack SAT Solver](SatSolver/Graphs/scatter_plot_kSATu.png)
+![kSATu Curve Fit Plot using Backtrack SAT Solver](SatSolver/Graphs/curve_fit_plot_kSATu.png)
 
 In this plot, the blue scatter points symbolize the adjusted worst-case execution times associated with each variable number. The overlaying red curve provides an exponential fit to these points. The curve's distinct exponential growth suggests a rapid increase in the worst-case execution time with a growing number of variables, especially prominent for larger counts. This trend is in line with the Backtrack SAT Solver's expected complexity, which is known to exhibit an exponential growth pattern in execution time as problem size increases.
 
