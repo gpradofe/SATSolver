@@ -166,7 +166,12 @@ int main()
     std::string base_filename = getBaseFilename(filename);
     std::ofstream csv_file(base_filename + ".csv");
     csv_file << "Problem Number,Number of Variables,Number of Clauses,Max Literals in a Clause,Total Literals,S/U,Agreement,Execution Time in Microseconds,Assignments..." << std::endl;
-
+    std::ofstream log_file(base_filename + ".log");
+    if (!log_file.is_open())
+    {
+        std::cerr << "Failed to open log file." << std::endl;
+        return 1;
+    }
     // Initialize counters and containers.
     int total_wffs = 0, total_satisfiable = 0, total_unsatisfiable = 0, total_answer_provided = 0, total_correct_answers = 0;
     std::mutex mtx;
@@ -192,6 +197,7 @@ int main()
     for (const auto &result : results)
     {
         std::cout << result.output;
+        log_file << result.output;
         csv_file << result.csv_data;
     }
 
@@ -199,6 +205,7 @@ int main()
     csv_file << "Filename,Team Name,Total WFFs,Satisfiable WFFs,Unsatisfiable WFFs,WFFs with Provided Answers,Correctly Answered WFFs" << std::endl;
     csv_file << base_filename << ",OrozcoAniceto," << total_wffs << "," << total_satisfiable << "," << total_unsatisfiable << "," << total_answer_provided << "," << total_correct_answers << std::endl;
 
+    log_file.close();
     csv_file.close();
     return 0;
 }

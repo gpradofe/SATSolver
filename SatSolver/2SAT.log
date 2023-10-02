@@ -1,0 +1,450 @@
+Solving formula #1
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #1
+0 2 1 2 
+Solving formula #2
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #2
+Solving formula #3
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #3
+0 0 0 2 
+Solving formula #4
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #4
+2 0 2 0 
+Solving formula #5
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #5
+Solving formula #6
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #6
+Solving formula #7
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #7
+Solving formula #8
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #8
+1 1 0 2 
+Solving formula #9
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #9
+1 2 1 0 
+Solving formula #10
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #10
+2 0 2 2 
+Solving formula #11
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #11
+0 2 2 1 2 2 2 0 
+Solving formula #12
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #12
+0 0 2 0 2 2 0 2 
+Solving formula #13
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #13
+1 0 0 2 0 2 0 0 
+Solving formula #14
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #14
+Solving formula #15
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #15
+Solving formula #16
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #16
+Solving formula #17
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #17
+Solving formula #18
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #18
+0 2 0 2 2 0 0 2 
+Solving formula #19
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #19
+0 2 2 2 2 2 2 2 
+Solving formula #20
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #20
+Solving formula #21
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #21
+Solving formula #22
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #22
+2 2 0 1 2 0 1 0 2 0 0 0 
+Solving formula #23
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #23
+0 2 0 2 1 0 2 2 1 2 2 0 
+Solving formula #24
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #24
+0 0 1 0 0 0 2 2 0 0 1 2 
+Solving formula #25
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #25
+0 0 1 1 0 0 2 0 0 0 1 0 
+Solving formula #26
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #26
+1 1 0 1 1 1 0 0 1 0 0 0 
+Solving formula #27
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #27
+Solving formula #28
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #28
+Solving formula #29
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #29
+Solving formula #30
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #30
+Solving formula #31
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #31
+2 0 0 1 0 2 2 2 1 0 1 0 0 2 2 0 
+Solving formula #32
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #32
+Solving formula #33
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #33
+2 0 0 2 2 1 2 0 2 2 0 2 0 2 2 2 
+Solving formula #34
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #34
+0 2 0 0 2 0 2 2 2 0 0 2 2 2 1 2 
+Solving formula #35
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #35
+Solving formula #36
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #36
+2 1 2 2 0 0 1 0 2 0 0 0 0 0 2 1 
+Solving formula #37
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #37
+Solving formula #38
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #38
+0 1 2 0 2 2 0 2 2 2 1 2 2 0 2 2 
+Solving formula #39
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #39
+Solving formula #40
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #40
+0 2 2 2 1 2 0 0 2 1 2 2 2 2 2 0 
+Solving formula #41
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #41
+Solving formula #42
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #42
+Solving formula #43
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #43
+Solving formula #44
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #44
+2 1 2 0 2 1 2 2 0 2 2 2 0 0 0 2 0 0 
+Solving formula #45
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #45
+Solving formula #46
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #46
+2 0 0 1 0 0 2 0 2 0 0 1 2 0 0 0 2 2 
+Solving formula #47
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #47
+0 2 0 0 2 2 0 2 0 0 1 1 1 1 2 1 2 2 
+Solving formula #48
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #48
+Solving formula #49
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #49
+0 0 1 0 2 0 0 2 0 1 0 2 2 2 2 2 1 2 
+Solving formula #50
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #50
+Solving formula #51
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #51
+Solving formula #52
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #52
+0 1 0 0 1 2 0 2 0 0 2 0 1 0 2 0 1 0 2 
+Solving formula #53
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #53
+0 0 2 0 2 2 2 2 1 0 2 1 0 0 2 0 2 1 0 0 
+Solving formula #54
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #54
+2 2 2 2 1 0 1 0 1 2 0 0 0 2 0 1 2 2 0 0 
+Solving formula #55
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #55
+Solving formula #56
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #56
+Solving formula #57
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #57
+Solving formula #58
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #58
+2 2 0 1 2 0 0 2 2 0 2 0 2 2 0 0 0 2 0 1 
+Solving formula #59
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #59
+Solving formula #60
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #60
+Solving formula #61
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #61
+1 0 0 1 0 1 1 1 2 2 2 2 0 0 1 1 0 2 2 2 1 2 
+Solving formula #62
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #62
+0 0 2 2 2 0 2 0 2 1 2 2 0 2 2 0 0 0 2 0 2 0 
+Solving formula #63
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #63
+Solving formula #64
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #64
+2 2 1 1 2 1 1 1 0 0 0 0 0 0 0 0 0 2 0 2 0 0 
+Solving formula #65
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #65
+2 0 1 0 2 2 0 1 0 0 1 0 1 0 1 0 2 2 0 0 1 0 
+Solving formula #66
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #66
+2 1 2 2 0 2 1 2 2 2 1 1 0 0 0 1 0 2 2 0 2 2 
+Solving formula #67
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #67
+Solving formula #68
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #68
+Solving formula #69
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #69
+1 0 0 0 1 0 2 0 0 0 1 0 0 0 1 1 0 2 1 0 0 2 
+Solving formula #70
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #70
+Solving formula #71
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #71
+Solving formula #72
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #72
+2 2 0 0 2 0 1 0 2 2 0 1 0 0 0 2 0 1 2 1 2 0 2 2 
+Solving formula #73
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #73
+2 2 2 1 2 2 0 0 1 1 0 0 2 2 0 0 2 2 0 2 0 2 1 1 
+Solving formula #74
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #74
+Solving formula #75
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #75
+Solving formula #76
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #76
+Solving formula #77
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #77
+1 0 0 2 0 0 2 2 0 1 2 2 0 2 2 2 0 1 2 2 2 2 1 0 
+Solving formula #78
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #78
+Solving formula #79
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #79
+0 0 2 1 2 2 2 0 0 2 1 1 0 2 0 1 1 0 2 0 0 1 1 0 
+Solving formula #80
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #80
+2 0 0 0 2 2 2 1 2 0 2 1 2 2 0 0 2 0 1 2 0 0 0 2 
+Solving formula #81
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #81
+Solving formula #82
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #82
+0 0 2 0 0 2 0 2 0 2 2 1 0 0 0 0 1 0 1 2 2 0 2 1 1 2 
+Solving formula #83
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #83
+Solving formula #84
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #84
+Solving formula #85
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #85
+Solving formula #86
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #86
+Solving formula #87
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #87
+0 2 2 1 0 2 0 0 2 0 0 0 2 0 2 2 2 2 2 2 1 0 1 0 0 0 
+Solving formula #88
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #88
+0 1 2 2 2 2 2 0 2 2 1 0 0 0 0 0 0 2 1 2 2 2 0 2 2 0 
+Solving formula #89
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #89
+Solving formula #90
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #90
+2 2 1 1 0 1 0 1 2 2 0 0 1 0 0 2 0 1 0 1 1 2 2 0 1 0 
+Solving formula #91
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #91
+Solving formula #92
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #92
+1 2 1 1 1 0 0 1 2 2 0 2 0 0 0 1 0 1 2 0 1 2 2 0 0 0 0 2 
+Solving formula #93
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #93
+Solving formula #94
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #94
+Solving formula #95
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #95
+Solving formula #96
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #96
+1 2 2 1 0 1 2 1 2 1 1 1 0 0 2 1 0 2 2 0 1 1 2 0 2 2 0 1 
+Solving formula #97
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #97
+2 2 0 2 0 0 0 2 1 2 2 1 2 1 2 2 2 2 2 1 0 2 0 2 2 2 2 2 
+Solving formula #98
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #98
+0 1 2 2 2 0 2 0 1 2 0 2 0 0 2 0 0 0 0 2 0 0 2 2 1 0 0 1 
+Solving formula #99
+Answer: ?
+Max literals in a clause: 2
+No satisfiable answer found for formula #99
+Solving formula #100
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #100
+2 0 0 1 0 0 0 2 2 2 1 1 2 0 1 0 1 2 1 0 0 1 0 1 2 2 2 2 

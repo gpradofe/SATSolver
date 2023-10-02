@@ -2,6 +2,19 @@
 
 ## Detailed analysis and performance insights for various SAT solvers.
 
+### Note:
+
+For each section (Backtrack and TwoSAT), the following files are provided:
+
+- `.log` file: Contains logs for all runs (prints the output).
+- `.csv` file: Contains the correct outputs required for generating charts.
+
+For the extra Sudoku section:
+
+- `.txt` file: Contains the console output.
+- `.log` file: Contains log outputs.
+- `.csv` file: Contains generated Sudokus in CNF DIMACS format.
+
 ## 📋 Table of Contents
 
 1. 🧑‍💻 **[Team Members](#team-members)**

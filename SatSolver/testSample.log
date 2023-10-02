@@ -1,0 +1,19 @@
+Solving formula #1
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #1
+0 2 1 2 
+Solving formula #2
+Answer: ?
+Max literals in a clause: 2
+Satisfiable answer found for formula #2
+2 0 0 1 0 0 0 2 2 2 1 1 2 0 1 0 1 2 1 0 0 1 0 1 2 2 2 2 
+Solving formula #3
+Answer: U
+Max literals in a clause: 2
+No satisfiable answer found for formula #3
+Solving formula #4
+Answer: S
+Max literals in a clause: 2
+Satisfiable answer found for formula #4
+2 0 0 0 

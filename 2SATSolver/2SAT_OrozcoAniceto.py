@@ -2,6 +2,7 @@ from collections import defaultdict
 import csv
 import time
 from typing import List, Tuple, Union
+import logging
 
 class TwoSAT:
     def __init__(self, n: int):
@@ -132,75 +133,82 @@ def read_2sat_cnf(filename: str) -> List[Tuple[int, int, str, List[Tuple[int, in
         if clauses:  # Add the last set of clauses
             formulas.append((Num_Vars, num_clauses, answer, clauses))
     return formulas
+if __name__ == "__main__":
+    logging.basicConfig(filename='2SAT.log', level=logging.INFO, 
+                    format='%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
-filename = "2SAT.cnf"
-output_filename = "2SAT_results.csv"
+    filename = "2SATSolver/2SAT.cnf"
+    output_filename = "2SAT_results.csv"
 
-# Additional counters for summary stats
-total_wffs = 0
-satisfiable_count = 0
-unsatisfiable_count = 0
-answers_provided_count = 0
-correct_answers_count = 0
+    # Additional counters for summary stats
+    total_wffs = 0
+    satisfiable_count = 0
+    unsatisfiable_count = 0
+    answers_provided_count = 0
+    correct_answers_count = 0
 
-# Open the CSV file for writing results
-with open(output_filename, 'w', newline='') as csvfile:
-    csv_writer = csv.writer(csvfile)
-    # Adjusted header for new CSV format
-    csv_writer.writerow(["Problem Number", "Number of Variables", "Number of Clauses", 
-                         "Max Literals in Any Clause", "Total Number of Literals", 
-                         "S/U", "1/-1/0", "Execution Time (microseconds)", "Variable Assignments"])
-    
-    formulas = read_2sat_cnf(filename)
-    formula_num = 1  # Counter for formula number
-
-    for Num_Vars, num_clauses, provided_answer, cnf_clauses in formulas:
-        total_wffs += 1
-        solver = TwoSAT(Num_Vars)
-
-        for clause in cnf_clauses:
-            solver.add_clause(*clause)
-
-        # Measure the start time
-        start_time = time.time()
-    
-        result, assignment = solver.solve()
-
-        # Measure the end time
-        end_time = time.time()
-    
-        elapsed_time = (end_time - start_time) * 1e6  # Convert to microseconds
+    # Open the CSV file for writing results
+    with open(output_filename, 'w', newline='') as csvfile:
+        csv_writer = csv.writer(csvfile)
+        # Adjusted header for new CSV format
+        csv_writer.writerow(["Problem Number", "Number of Variables", "Number of Clauses", 
+                            "Max Literals in Any Clause", "Total Number of Literals", 
+                            "S/U", "1/-1/0", "Execution Time (microseconds)", "Variable Assignments"])
         
-        max_literals_in_clause = max(len(clause) for clause in cnf_clauses)
-        total_literals = sum(len(clause) for clause in cnf_clauses)
+        formulas = read_2sat_cnf(filename)
+        formula_num = 1  # Counter for formula number
 
-        # Compare with provided answer
-        short_result = 'S' if result == "satisfiable" else 'U'
-        if provided_answer == '?':
-            answer_check = 0  # No answer provided
-        elif provided_answer == short_result:
-            answers_provided_count += 1
-            correct_answers_count += 1
-            answer_check = 1  # Answer provided and matches
-        else:
-            answers_provided_count += 1
-            answer_check = -1  # Answer provided but doesn't match
+        for Num_Vars, num_clauses, provided_answer, cnf_clauses in formulas:
+            total_wffs += 1
+            solver = TwoSAT(Num_Vars)
 
-        if short_result == 'S':
-            satisfiable_count += 1
-            print("Satisfiable")
-            print("Variable assignments:", [int(val) if val is not None else -1 for val in assignment])
-        else:
-            unsatisfiable_count += 1
-            print("Unsatisfiable")
+            for clause in cnf_clauses:
+                solver.add_clause(*clause)
+
+            # Measure the start time
+            start_time = time.time()
         
-        # Here, we're using placeholders since more information is required for accurate calculation
-        csv_writer.writerow([formula_num, Num_Vars, num_clauses, max_literals_in_clause, 
-                            total_literals, short_result, answer_check, elapsed_time] + 
-                            ([int(val) if val is not None else -1 for val in assignment] if assignment else []))
-        
-        formula_num += 1
+            result, assignment = solver.solve()
 
-    # Write the summary stats
-    csv_writer.writerow([filename.split('.')[0], "OrozcoAniceto", total_wffs, satisfiable_count, 
-                        unsatisfiable_count, answers_provided_count, correct_answers_count])
+            # Measure the end time
+            end_time = time.time()
+        
+            elapsed_time = (end_time - start_time) * 1e6  # Convert to microseconds
+            
+            max_literals_in_clause = max(len(clause) for clause in cnf_clauses)
+            total_literals = sum(len(clause) for clause in cnf_clauses)
+
+            # Compare with provided answer
+            short_result = 'S' if result == "satisfiable" else 'U'
+            if provided_answer == '?':
+                answer_check = 0  # No answer provided
+            elif provided_answer == short_result:
+                answers_provided_count += 1
+                correct_answers_count += 1
+                answer_check = 1  # Answer provided and matches
+            else:
+                answers_provided_count += 1
+                answer_check = -1  # Answer provided but doesn't match
+
+            if short_result == 'S':
+                satisfiable_count += 1
+                logging.info("Satisfiable")
+                logging.info("Variable assignments: %s", [int(val) if val is not None else -1 for val in assignment])
+
+                print("Satisfiable")
+                print("Variable assignments:", [int(val) if val is not None else -1 for val in assignment])
+            else:
+                unsatisfiable_count += 1
+                logging.info("Unsatisfiable")
+                print("Unsatisfiable")
+            
+            # Here, we're using placeholders since more information is required for accurate calculation
+            csv_writer.writerow([formula_num, Num_Vars, num_clauses, max_literals_in_clause, 
+                                total_literals, short_result, answer_check, elapsed_time] + 
+                                ([int(val) if val is not None else -1 for val in assignment] if assignment else []))
+            
+            formula_num += 1
+
+        # Write the summary stats
+        csv_writer.writerow([filename.split('.')[0], "OrozcoAniceto", total_wffs, satisfiable_count, 
+                            unsatisfiable_count, answers_provided_count, correct_answers_count])

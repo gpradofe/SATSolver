@@ -5,7 +5,7 @@ CXXFLAGS = -std=c++11 -Wall -Wextra
 # Source and object files
 SOURCES = main.cpp Classes/Body/BacktrackSolver.cpp Classes/Body/BooleanFormula.cpp Classes/Body/Clause.cpp Classes/Body/Literal.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
-TARGET = sat_solver
+TARGET = backtrack_OrozcoAniceto
 
 # Directories for headers
 INCLUDE_DIRS = -IClasses/Headers
